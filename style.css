@@ -1,0 +1,309 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  z-index: -2;
+  background-position: center;
+  background: url("img/stars.jpg");
+  text-decoration: none;
+}
+
+h1{
+  text-align: center;
+}
+
+header{
+  width: 100%;
+  height: 50px;
+}
+
+.menu-icon {
+      line-height: 60px;
+      height: 50px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      cursor: pointer;
+      padding: 0 15px;
+      color: #fff;
+      display: none;
+}
+
+.section{
+  background-color: #FFDAB9;
+  position: relative;
+  z-index: 1;
+}
+
+.section1{
+  height: 80vh;
+  background-image: url(img/background.jpg);
+  width: 90%;
+  border: 5px solid white;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-size: cover; 
+}
+
+.section2{
+  /* background-image: url("img/stars.jpg");
+  background-size: cover;
+  background-position: center; */
+}
+.section4{
+  color: white;
+  height: 80vh; 
+  width: 100%;
+  background-image: url("img/exoplanet.jpg");
+  background-size: cover;
+  width: 90%;
+  margin: 0 auto;
+  border: 5px solid white;
+  border-radius: 50px;
+}
+
+.logo{
+  color: white;
+  font-family: 'Mina', sans-serif;
+  font-weight: bold;
+  position: fixed;
+  font-size: 1.5em;
+  display: none;
+  float: left;
+  margin: 10px;
+}
+
+.row{
+  margin-top: 20px;
+}
+
+
+.profile{
+  text-align: center;
+  z-index: 0;
+}
+
+.portrait{
+  border: 2px solid black;
+  margin: 10px;
+}
+
+nav{
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background: 'black';
+}
+
+nav ul{
+
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: all 2s ease;
+  height: 50px;
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+nav.black ul{
+  position: relative;
+  background: black;
+  transition: all 2s ease;
+}
+
+
+nav.black ul a{
+  color: white;
+}
+
+nav ul li a{
+  position: relative;
+  top: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: 'Mina', sans-serif;
+  transition: 1s;
+}
+
+nav ul li a:hover{
+  text-decoration: underline;
+  color: white;
+}
+
+h1, h5, p{
+  color: black;
+  font-family: 'Mina', sans-serif;
+}
+
+
+h5{
+  font-weight: bold;
+}
+
+.heading{
+  color: white;
+  padding-top: 50px;
+  text-align: center;
+  font-weight: 200;
+  font-size: 4em;
+  font-family: 'Mina', sans-serif;
+}
+
+.subheading{
+  margin-top: 25px;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Mina', sans-serif;
+  font-weight: 200;
+}
+
+h1 span{
+  background-color: rgba(0,0,0,0.7);
+}
+
+h2 span{
+  background-color: rgba(0,0,0,0.7);
+}
+
+
+.container{
+  padding: 25px;
+}
+
+.row{
+  z-index: 0;
+}
+
+.description{
+  color: white;
+  font-family: 'Mina', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  text-align: justify;
+  background: rgba(0,0,0,0.7);
+}
+
+.icon{
+  position: fixed;
+  float: left;
+  margin: 16px 36px;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  z-index: 2;
+}
+
+.grid2{
+  margin: 0 auto;
+  display: grid;
+  border: none;
+  width: 90%;
+  height: 300px;
+}
+
+
+.statistics{
+
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+strong{
+  font-size: 1.6em;
+}
+
+.mission{
+  padding-top: 25px;
+  text-align: center;
+  color: white;
+  font-family: 'Mina', sans-serif;
+}
+
+.mission span{
+  background-color: rgba(0,0,0,0.7);
+}
+
+@media(max-width: 786px) {
+
+  header{
+    height: 50px;
+  }
+
+  .heading{
+    font-size: 2em;
+    line-height: 52px;
+  }
+
+  .subheading{
+    font-size: 2em;
+    line-height:52px;
+  }
+
+  .logo{
+    margin: 10px;
+    position: fixed;
+    display: block;
+    z-index: 3;
+  }
+
+  nav.black ul{
+    background: black;
+    margin-top: 0;
+  }
+
+  nav ul{  
+    height: 0;
+    
+  }
+
+  .showing{
+    height: 30em;
+    background: black;
+  }
+ 
+  nav ul li {
+    margin-top: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+  } 
+
+  nav.white ul li a{
+    color: white;
+  }
+  
+  nav ul li a { 
+    color: white;
+  }
+
+  .description{
+    font-size: 1em;
+  }
+ 
+  .menu-icon{
+    position: fixed;
+    display: block;
+    z-index: 2;
+  }
+  
+
+
+}
+
+@media(max-width: 567px){
+
+  .section4{
+    background-image: url("img/shrink.jpg");
+  }
+
+}
